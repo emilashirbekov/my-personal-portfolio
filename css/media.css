@@ -250,6 +250,10 @@
 }
 
 @media screen and (max-width: 36em) {
+  .contact-wrapper {
+    display: flex;
+    justify-content: center;
+  }
   .direct-contact-container,
   .form-wrapper {
     float: none;
@@ -259,7 +263,11 @@
   textarea {
     margin: 0 auto;
   }
-
+  .form-horizontal {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
   .name,
   .email,
   textarea {
@@ -274,13 +282,14 @@
 
 @media screen and (max-width: 26em) {
   .contact-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: self-start;
     padding: 2rem;
     position: relative;
     max-width: 90rem;
+  }
+  .form-horizontal {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
   .direct-contact-container,
   .form-wrapper {
@@ -295,7 +304,7 @@
   .name,
   .email,
   textarea {
-    width: 25rem;
+    width: -webkit-fill-available;
   }
 
   .direct-contact-container {
