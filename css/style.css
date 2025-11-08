@@ -927,3 +927,29 @@ hr {
     box-shadow: 5px 5px 20px rgb(93, 52, 168), -5px -5px 20px rgb(93, 52, 168);
   }
 }
+
+.about__img {
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  background-color: rgb(93, 52, 168);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  transition: transform 0.4s ease;
+}
+
+.about__img img:hover {
+  transform: scale(1.03);
+}
